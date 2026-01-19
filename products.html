@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tour Packages - Intersight Holidays</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <img src="images/logo.png" alt="Company Logo" class="logo" >
+            <nav>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="products.html">Packages</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="filters">
+            <form>
+                <div class="filter-item">
+                    <span class="filter-name">Dest</span>
+                    <select id="destination" name="destination">
+                        <option value="all">All</option>
+                        <option value="domestic">Domestic</option>
+                        <option value="international">International</option>
+                    </select>
+                </div>
+                <div class="filter-item">
+                    <span class="filter-name">Price</span>
+                    <input type="range" id="price-range" name="price-range" min="0" max="5000">
+                </div>
+                <div class="filter-item">
+                    <span class="filter-name">Days</span>
+                    <input type="number" id="duration" name="duration" min="1" max="30">
+                </div>
+                <div class="filter-item">
+                    <span class="filter-name">Type</span>
+                    <select id="type" name="type">
+                        <option value="all">All</option>
+                        <option value="honeymoon">Honeymoon</option>
+                        <option value="adventure">Adventure</option>
+                        <option value="family">Family</option>
+                    </select>
+                </div>
+                <button type="submit">Filter</button>
+            </form>
+        </section>
+        <h2 class=".h2">Tour Packages</h2>
+        <section class="packages">
+            <!-- Single h2 for all packages -->
+            <div class="package-category">
+                <h3>Domestic Tours</h3>
+                <div class="slider">
+                    <div class="package">
+                        <h4>Discover Kerala</h4>
+                        <img src="images/kerala.jpeg" alt="Domestic Package 1">
+                        <p>Explore the backwaters and lush landscapes of Kerala.</p>
+                        <button>Learn More</button>
+                    </div>
+                    <div class="package">
+                        <h4>Rajasthan Heritage</h4>
+                        <img src="images/Rajasthan.jpeg" alt="Domestic Package 2">
+                        <p>Experience the rich culture and history of Rajasthan.</p>
+                        <button>Learn More</button>
+                    </div>
+                </div>
+            </div>
+            <div class="package-category">
+                <h3>International Tours</h3>
+                <div class="slider">
+                    <div class="package">
+                        <h4>Swiss Alps</h4>
+                        <img src="images/alps.jpeg" alt="International Package 1">
+                        <p>Enjoy the breathtaking views and activities in the Swiss Alps.</p>
+                        <button>Learn More</button>
+                    </div>
+                    <div class="package">
+                        <h4>Japanese Cherry Blossoms</h4>
+                        <img src="images/Cherry.jpeg" alt="International Package 2">
+                        <p>Witness the stunning cherry blossoms in Japan.</p>
+                        <button>Learn More</button>
+                    </div>
+                </div>
+            </div>
+            <div class="package-category">
+                <h3>Honeymoon Packages</h3>
+                <div class="slider">
+                    <div class="package">
+                        <h4>Romantic Paris</h4>
+                        <img src="images/paris.jpeg" alt="Honeymoon Package 1">
+                        <p>Experience the romance of Paris with our exclusive honeymoon package.</p>
+                        <button>Learn More</button>
+                    </div>
+                    <div class="package">
+                        <h4>Maldives Escape</h4>
+                        <img src="images/maldives.jpeg" alt="Honeymoon Package 2">
+                        <p>Relax and unwind in the beautiful Maldives.</p>
+                        <button>Learn More</button>
+                    </div>
+                </div>
+            </div>
+            <div class="package-category">
+                <h3>Adventure Tours</h3>
+                <div class="slider">
+                    <div class="package">
+                        <h4>Amazon Rainforest</h4>
+                        <img src="images/amazon.jpeg" alt="Adventure Package 1">
+                        <p>Explore the wild and diverse Amazon Rainforest.</p>
+                        <button>Learn More</button>
+                    </div>
+                    <div class="package">
+                        <h4>Mount Everest Base Camp</h4>
+                        <img src="images/mount.jpeg" alt="Adventure Package 2">
+                        <p>Challenge yourself with a trek to the Mount Everest Base Camp.</p>
+                        <button>Learn More</button>
+                    </div>
+                </div>
+            </div>
+            <div class="package-category">
+                <h3>Family Holidays</h3>
+                <div class="slider">
+                    <div class="package">
+                        <h4>Disney World</h4>
+                        <img src="images/disney.jpeg" alt="Family Package 1">
+                        <p>Enjoy a magical family vacation at Disney World.</p>
+                        <button>Learn More</button>
+                    </div>
+                    <div class="package">
+                        <h4>Safari Adventure</h4>
+                        <img src="images/safari.jpeg" alt="Family Package 2">
+                        <p>Experience the thrill of a safari adventure with your family.</p>
+                        <button>Learn More</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section about-us">
+                <h3>About Us</h3>
+                <p>Your dream designation plan starts here.</p>
+                <p>Address: 123 Main St, Kerala, India</p>
+            </div>
+            <div class="footer-section footer-links">
+                <h3>Quick Links</h3>
+                <a href="#">Home</a>
+                <a href="#">Packages</a>
+                <a href="#">Contact</a>
+                <a href="#">Privacy Policy</a>
+            </div>
+            <div class="footer-section footer-newsletter">
+                <h3>Subscribe to our Newsletter</h3>
+                <input type="email" placeholder="Your email">
+                <button>Subscribe</button>
+            </div>
+            <div class="footer-section contact-info">
+                <h3>Contact Us</h3>
+                <p>Email: Intersight@gmail.com</p>
+                <p>Phone: +1-123-456-7890</p>
+            </div>
+            <div class="footer-section social-media">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/maryjainrj"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.linkedin.com/in/mary-jain-joshy/"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://www.instagram.com/mary_jain_rj/"><i class="fab fa-instagram"></i></a>
+                </div>
+                
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2025 Intersight. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
